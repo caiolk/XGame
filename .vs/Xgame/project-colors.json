@@ -1,0 +1,26 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "a0cba834-fda2-43f0-9907-ec584e0470dd": {
+      "ProjectGuid": "a0cba834-fda2-43f0-9907-ec584e0470dd",
+      "DisplayName": "Solution Items",
+      "ColorIndex": 0
+    },
+    "693a9e6a-b671-4a00-bedd-40e2b92cc368": {
+      "ProjectGuid": "693a9e6a-b671-4a00-bedd-40e2b92cc368",
+      "DisplayName": "XGame.Domain",
+      "ColorIndex": 1
+    },
+    "9733ed06-744b-4c6d-9be8-d2ef356912a7": {
+      "ProjectGuid": "9733ed06-744b-4c6d-9be8-d2ef356912a7",
+      "DisplayName": "XGame.AppConsole",
+      "ColorIndex": 2
+    },
+    "3fdf4692-be5d-4a80-9b49-d4294918c4eb": {
+      "ProjectGuid": "3fdf4692-be5d-4a80-9b49-d4294918c4eb",
+      "DisplayName": "XGame.AppConsole",
+      "ColorIndex": 3
+    }
+  },
+  "NextColorIndex": 4
+}
