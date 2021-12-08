@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using XGame.Domain.Arguments.Jogador;
 using XGame.Domain.Entities;
+using XGame.Domain.Interfaces.Arguments.Base;
 using XGame.Domain.Interfaces.Repositories;
 using XGame.Domain.Interfaces.Services;
 using XGame.Domain.Resources;
@@ -70,7 +71,7 @@ namespace XGame.Domain.Services
                 return null;
 
             }
-            
+            _repositoryJogador.Editar(jogador);
 
             return (AlterarJogadorResponse) jogador;
         }
@@ -94,14 +95,28 @@ namespace XGame.Domain.Services
 
             }
 
+            jogador = _repositoryJogador.ObterPor(x => x.Email.Endereco == jogador.Email.Endereco, x => x.Senha == jogador.Senha);
             // jogador = _repositoryJogador.AutenticarJogador(jogador.Email.Endereco, jogador.Senha);
             return (AutenticarJogadorResponse) jogador;
         }
+
 
         public IEnumerable<JogadorResponse> ListarJogador()
         {
             return _repositoryJogador.Listar().Select(jogador => (JogadorResponse) jogador ).ToList();
         }
+        public ResponseBase ExcluirJogador(Guid id)
+        {
+            Jogador jogador =_repositoryJogador.ObterPorId(id);
+            if (jogador == null) 
+            {
+                AddNotification("Id", Message.DADOS_NAO_ENCONTRADOS);
+                return null;
+            }
+            _repositoryJogador.Remover(jogador);
 
+            return new ResponseBase();
+        }
+        
     }
 }

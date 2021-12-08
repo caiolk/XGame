@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 using System.Linq.Expressions;
+using XGame.Domain.Entities.Base;
 using XGame.Domain.Interfaces.Repositories.Base;
 
 namespace XGame.Infra.Persistence.Repositories.Base

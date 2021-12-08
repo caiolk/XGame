@@ -183,6 +183,7 @@
     <Compile Include="Arguments\Jogador\JogadorResponse.cs" />
     <Compile Include="Arguments\Plataforma\AdicionarPlataformaRequest.cs" />
     <Compile Include="Arguments\Plataforma\AdicionarPlataformaResponse.cs" />
+    <Compile Include="Entities\Base\EntityBase.cs" />
     <Compile Include="Entities\Jogo.cs" />
     <Compile Include="Entities\JogoPlataforma.cs" />
     <Compile Include="Entities\MeuJogo.cs" />
@@ -190,8 +191,10 @@
     <Compile Include="Entities\Jogador.cs" />
     <Compile Include="Enum\EnumSituacaoJogador.cs" />
     <Compile Include="Extensions\StringExtensions.cs" />
+    <Compile Include="Interfaces\Arguments\Base\ResponseBase.cs" />
     <Compile Include="Interfaces\Arguments\IResponse.cs" />
     <Compile Include="Interfaces\Arguments\IRequest.cs" />
+    <Compile Include="Interfaces\Repositories\Base\IRepositoryBase.cs" />
     <Compile Include="Interfaces\Repositories\IRepositoryJogador.cs" />
     <Compile Include="Interfaces\Services\IServicePlataforma.cs" />
     <Compile Include="Interfaces\Services\IServiceJogador.cs" />
