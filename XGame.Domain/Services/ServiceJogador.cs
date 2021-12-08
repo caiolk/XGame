@@ -37,7 +37,7 @@ namespace XGame.Domain.Services
                 return null;
             }
 
-            jogador = _repositoryJogador.AdicionarJogador(jogador);
+            jogador = _repositoryJogador.Adicionar(jogador);
 
             return (AdicionarJogadorResponse) jogador;
             
@@ -50,7 +50,7 @@ namespace XGame.Domain.Services
                 AddNotification("AlterarJogadorRequest", Message.X0_E_OBRIGATORIO.ToFormat("AlterarJogadorRequest"));
             }
 
-            Jogador jogador = _repositoryJogador.ObterJogadorPorId(request.Id);
+            Jogador jogador = _repositoryJogador.ObterPorId(request.Id);
 
             if (jogador == null) 
             {
@@ -70,7 +70,7 @@ namespace XGame.Domain.Services
                 return null;
 
             }
-            _repositoryJogador.ALterarJogador(jogador);
+            
 
             return (AlterarJogadorResponse) jogador;
         }
@@ -100,7 +100,7 @@ namespace XGame.Domain.Services
 
         public IEnumerable<JogadorResponse> ListarJogador()
         {
-            return _repositoryJogador.ListarJogador().ToList().Select(jogador => (JogadorResponse) jogador ).ToList();
+            return _repositoryJogador.Listar().Select(jogador => (JogadorResponse) jogador ).ToList();
         }
 
     }

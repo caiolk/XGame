@@ -20,7 +20,12 @@
       "ProjectGuid": "3fdf4692-be5d-4a80-9b49-d4294918c4eb",
       "DisplayName": "XGame.AppConsole",
       "ColorIndex": 3
+    },
+    "eef6439d-91ec-44c2-8c69-f32920267998": {
+      "ProjectGuid": "eef6439d-91ec-44c2-8c69-f32920267998",
+      "DisplayName": "XGame.Infra",
+      "ColorIndex": 4
     }
   },
-  "NextColorIndex": 4
+  "NextColorIndex": 5
 }
